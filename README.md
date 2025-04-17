@@ -1,7 +1,7 @@
 # Group 8 Freelance Platform
 
 <div align="center">
-  <img src="./media/atcLogo.png" alt="ATC Logo" width="200"/>
+  <img src="./static/images/atcLogo.png" alt="ATC Logo" width="200"/>
   <h2>Python Programming Module Assignment</h2>
   <h3>NTA Level 7-1 Semester 2, 2025</h3>
   <p>Arusha Technical College (ATC), Tanzania</p>
