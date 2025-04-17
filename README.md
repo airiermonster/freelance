@@ -33,6 +33,7 @@ A comprehensive freelance platform developed as a group assignment by Group Numb
 - Python 3.8 or higher
 - MySQL 5.7 or higher
 - pip (Python package manager)
+- common sense 😁
 
 ### Detailed Installation Guide
 
