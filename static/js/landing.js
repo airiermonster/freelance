@@ -10,14 +10,34 @@ document.addEventListener('DOMContentLoaded', function() {
         delay: 100
     });
     
-    // Navbar scroll effect
+    // Enhanced Navbar scroll effect
     const header = document.querySelector('header');
+    let lastScroll = 0;
+    
     window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
+        const currentScroll = window.pageYOffset;
+        
+        if (currentScroll <= 0) {
+            header.classList.remove('scrolled');
+            header.classList.remove('nav-hidden');
+            return;
+        }
+        
+        if (currentScroll > lastScroll && currentScroll > 70) {
+            // Scrolling down & past header
+            header.classList.add('nav-hidden');
+        } else if (currentScroll < lastScroll) {
+            // Scrolling up
+            header.classList.remove('nav-hidden');
+        }
+        
+        if (currentScroll > 50) {
             header.classList.add('scrolled');
         } else {
             header.classList.remove('scrolled');
         }
+        
+        lastScroll = currentScroll;
     });
     
     // Mobile menu toggle
