@@ -1,4 +1,4 @@
-# Group 8 Freelance Platform
+# Group 9 Freelance Platform
 
 <div align="center">
   <img src="./static/images/atcLogo.png" alt="ATC Logo" width="200"/>
@@ -13,11 +13,11 @@ The Arusha Technical College (ATC) logo used in this project is the intellectual
 
 ## Project Overview
 
-A comprehensive freelance platform developed as a group assignment by Group Number 8 at Arusha Technical College (ATC). This platform aims to connect freelancers with clients in a user-friendly and efficient manner.
+A comprehensive freelance platform developed as a group assignment by Group Number 9 at Arusha Technical College (ATC). This platform aims to connect freelancers with clients in a user-friendly and efficient manner.
 
 ## Team Members
 
-### Group Number 8
+### Group Number 9
 1. Maximilian Urio
 2. Majaliwa Raymond
 3. Minhajj Minhajj
@@ -49,33 +49,33 @@ A comprehensive freelance platform developed as a group assignment by Group Numb
    ```
 
 3. **Database Setup:**
-   
+
    a. Start MySQL server if not already running
-   
+
    b. Create the database:
    ```sql
-   mysql -u root -e "CREATE DATABASE IF NOT EXISTS group8;"
+   mysql -u root -e "CREATE DATABASE IF NOT EXISTS group9;"
    ```
-   
+
    Note: If your MySQL installation has a password, use:
    ```sql
-   mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS group8;"
+   mysql -u root -p -e "CREATE DATABASE IF NOT EXISTS group9;"
    ```
 
 4. **Environment Configuration:**
-   
+
    a. Copy the example environment file:
    ```bash
    copy .env.example .env  # On Windows
    # OR
    cp .env.example .env    # On Linux/Mac
    ```
-   
+
    b. Update the `.env` file with your database credentials:
    ```plaintext
    DEBUG=True
    SECRET_KEY=your-secret-key-here
-   DB_NAME=group8
+   DB_NAME=group9
    DB_USER=root
    DB_PASSWORD=your-password  # Leave empty if no password
    DB_HOST=localhost
@@ -86,7 +86,7 @@ A comprehensive freelance platform developed as a group assignment by Group Numb
    ```bash
    # Create database tables
    python manage.py migrate
-   
+
    # Create an admin user
    python manage.py createsuperuser
    ```
@@ -123,19 +123,19 @@ If you encounter any issues:
 
 ```
 freelance/
-├── freelance_platform/    # Main project directory
-│   ├── settings.py       # Project settings
-│   ├── urls.py          # URL configurations
-│   └── wsgi.py          # WSGI configurations
-├── static/              # Static files
-│   ├── css/            # Stylesheets
-│   ├── js/             # JavaScript files
-│   └── images/         # Image assets
-├── templates/          # HTML templates
-├── media/              # User-uploaded files
-├── requirements.txt    # Project dependencies
-├── manage.py          # Django management script
-└── .env              # Environment variables
+├── freelance_group9/    # Main project directory
+│   ├── settings.py     # Project settings
+│   ├── urls.py        # URL configurations
+│   └── wsgi.py        # WSGI configurations
+├── static/            # Static files
+│   ├── css/          # Stylesheets
+│   ├── js/           # JavaScript files
+│   └── images/       # Image assets
+├── templates/        # HTML templates
+├── media/           # User-uploaded files
+├── requirements.txt # Project dependencies
+├── manage.py       # Django management script
+└── .env           # Environment variables
 ```
 
 ## Features
@@ -157,12 +157,12 @@ freelance/
 
 ## Academic Integrity
 
-This project is submitted as part of the Python Programming Module assessment at Arusha Technical College. All work presented is the original work of Group Number 8 members.
+This project is submitted as part of the Python Programming Module assessment at Arusha Technical College. All work presented is the original work of Group Number 9 members.
 
 ## Contact
 
 For any inquiries about this project, please contact:
-- Any Group Number 8 Member listed above
+- Any Group Number 9 Member listed above
 - Python Programming Module
 - NTA Level 7-1, Semester 2, 2025
 - Arusha Technical College (ATC)
@@ -170,6 +170,6 @@ For any inquiries about this project, please contact:
 
 ## License
 
-© 2025 Group Number 8, Arusha Technical College. All rights reserved.
+© 2025 Group Number 9, Arusha Technical College. All rights reserved.
 
-The project codebase is the work of Group Number 8, while institutional branding elements including but not limited to the ATC logo, name, and associated trademarks are the property of Arusha Technical College. 
+The project codebase is the work of Group Number 9, while institutional branding elements including but not limited to the ATC logo, name, and associated trademarks are the property of Arusha Technical College.

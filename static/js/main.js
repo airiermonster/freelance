@@ -1,14 +1,14 @@
-// Main JavaScript file for Group 8 Freelance Platform
+// Main JavaScript file for Group 9 Freelance Platform
 
 document.addEventListener('DOMContentLoaded', function() {
-    
-    console.log('Group 8 Freelance Platform initialized');
+
+    console.log('Group 9 Freelance Platform initialized');
 });
 
 
 function handleFormSubmit(event) {
     event.preventDefault();
-    
+
 }
 
 
@@ -25,4 +25,4 @@ function toggleMobileMenu() {
     if (nav) {
         nav.classList.toggle('active');
     }
-} 
+}

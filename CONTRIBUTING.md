@@ -1,6 +1,6 @@
-# Contributing to Group 8 Freelance Platform
+# Contributing to Group 9 Freelance Platform
 
-First off, thank you for considering contributing to the Group 8 Freelance Platform! It's people like you that make this project better.
+First off, thank you for considering contributing to the Group 9 Freelance Platform! It's people like you that make this project better.
 
 ## Code of Conduct
 
@@ -95,4 +95,4 @@ If you have a suggestion for the project, we'd love to hear it. Please provide t
 * `enhancement` - New feature or request
 * `documentation` - Documentation only changes
 * `security` - Security related issues
-* `good first issue` - Good for newcomers 
+* `good first issue` - Good for newcomers
