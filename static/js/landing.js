@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize AOS (Animate On Scroll)
     AOS.init({
         duration: 800,
-        easing: 'ease',
+        easing: 'ease-out',
         once: true,
-        offset: 100
+        offset: 50,
+        delay: 100
     });
     
     // Navbar scroll effect
@@ -72,6 +73,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 5000);
     }
     
+    // Typed.js for hero section (if available)
+    const typedElement = document.querySelector('.typed-text');
+    if (typedElement && typeof Typed !== 'undefined') {
+        // Pre-calculate the maximum width of all strings
+        const strings = [
+            'Freelancers',
+            'Web Developers',
+            'Designers',
+            'Writers',
+            'Marketers'
+        ];
+        
+        // Initialize Typed with optimized settings
+        new Typed(typedElement, {
+            strings: strings,
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 2000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|',
+            autoInsertCss: true,
+            preStringTyped: () => {
+                // Ensure smooth transitions
+                typedElement.style.opacity = '1';
+            }
+        });
+    }
+    
     // Counter animation for statistics
     const counters = document.querySelectorAll('.counter');
     if (counters.length > 0) {
@@ -87,10 +117,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     const updateCounter = () => {
                         current += step;
                         if (current < target) {
-                            counter.textContent = current;
+                            counter.textContent = current.toLocaleString();
                             requestAnimationFrame(updateCounter);
                         } else {
-                            counter.textContent = target;
+                            counter.textContent = target.toLocaleString();
                         }
                     };
                     
@@ -105,23 +135,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Typed.js for hero section (if available)
-    const typedElement = document.querySelector('.typed-text');
-    if (typedElement && typeof Typed !== 'undefined') {
-        new Typed(typedElement, {
-            strings: [
-                'Freelancers',
-                'Web Developers',
-                'Designers',
-                'Writers',
-                'Marketers'
-            ],
-            typeSpeed: 80,
-            backSpeed: 40,
-            backDelay: 1500,
-            loop: true
-        });
-    }
-    
-    console.log('Group 9 Freelance Platform landing page initialized Muhahaahah');
+    // Swahili comment: Tumefanikiwa kuimarisha mfumo wa kuruka kwa picha na maandishi
+    console.log('Group 9 Freelance Platform landing page initialized');
 });
